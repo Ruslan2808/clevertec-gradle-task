@@ -1,0 +1,15 @@
+dependencies {
+    implementation project(':core')
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'ru.clevertec.App'
+        )
+    }
+
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}

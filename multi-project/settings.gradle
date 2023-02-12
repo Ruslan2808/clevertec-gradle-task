@@ -1,0 +1,8 @@
+pluginManagement {
+    repositories {
+        mavenLocal()
+    }
+}
+
+rootProject.name = 'multi-project'
+include ('core', 'api')
