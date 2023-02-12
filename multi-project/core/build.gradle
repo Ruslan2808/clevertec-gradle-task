@@ -1,0 +1,13 @@
+plugins {
+    id 'ru.clevertec.test-report-plugin' version '1.3.5'
+}
+
+dependencies {
+    implementation 'ru.clevertec:utils:1.3.5'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.+'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.+'
+}
+
+test {
+    useJUnitPlatform()
+}
